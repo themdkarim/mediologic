@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(.//form\ image.png);
+
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 480px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0px 0px 40px black, 0 0 80px #4060b3;
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    transition: 0.3s;
+    padding-right:0px;
+    
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.3s;
+    color: #999;
+}
+
+input:focus, textarea:focus, input:valid, textarea:valid {
+    border-color: #4060b3;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    top: -10px;
+    left: 5px;
+    color: #4060b3;
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    background-color: #4060b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: 1s;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #4060b3;
+    border: 1px solid #4060b3;
+    transform: scale(1.1);
+}
